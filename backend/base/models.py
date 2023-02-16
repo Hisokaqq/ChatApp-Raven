@@ -31,7 +31,7 @@ class Message(models.Model):
     to_user = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="messages_to_me"
     )
-    content = models.CharField(max_length=512)
+    content = models.CharField(max_length=10000)
     image = models.ImageField(null=True, blank=True, upload_to="message/")
     timestamp = models.DateTimeField(auto_now_add=True)
     read = models.BooleanField(default=False)

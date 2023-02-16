@@ -8,4 +8,3 @@ urlpatterns = [
     
     
 ]
-print(32)
